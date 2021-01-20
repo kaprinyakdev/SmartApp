@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:stretchColumns="*">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+        <LinearLayout>
+            <Button
+                android:id="@+id/calculatorFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Calculator"
+                android:layout_margin="2dp"/>
+            <Button
+                android:id="@+id/converterFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Converter"
+                android:layout_margin="2dp"/>
+        </LinearLayout>
+    </TableRow>
+    <TableRow
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <FrameLayout android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </FrameLayout>
+    </TableRow>
+</TableLayout>

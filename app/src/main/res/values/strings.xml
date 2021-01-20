@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SmartApp</string>
+
+
+    <string-array name="money_arrays">
+        <item>HUF</item>
+        <item>EUR</item>
+        <item>USD</item>
+    </string-array>
+
+
+</resources>
