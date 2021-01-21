@@ -7,23 +7,76 @@
     android:background="@color/white">
 
     <TextView
-        android:id="@+id/result"
+        android:id="@+id/resultText"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_marginLeft="22dp"
         android:layout_marginRight="22dp"
         android:layout_marginBottom="22dp"
-        android:layout_marginTop="22dp"
+        android:layout_marginTop="60dp"
         android:background="@color/black"
         android:fontFamily="@font/orbitron"
         android:gravity="center"
         android:text=""
         android:textColor="@color/white"
-        android:textSize="30dp"/>
+        android:textSize="30dp"
+        android:maxLength="10"/>
 
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_marginLeft="20dp">
+            <Button
+                android:id="@+id/button7"
+                android:text="7"
+                style="@style/CalculatorButton"/>
+
+            <Button
+                android:id="@+id/button8"
+                android:text="8"
+                style="@style/CalculatorButton"/>
+
+            <Button
+                android:id="@+id/button9"
+                android:text="9"
+                style="@style/CalculatorButton" />
+
+            <Button
+                android:id="@+id/buttonMultiply"
+                android:text="*"
+                style="@style/CalculatorButton" />
+
+            <Button
+                android:text="del"
+                style="@style/CalculatorButton"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginLeft="20dp">
+            <Button
+                android:id="@+id/button4"
+                android:text="4"
+                style="@style/CalculatorButton"/>
+
+            <Button
+                android:id="@+id/button5"
+                android:text="5"
+                style="@style/CalculatorButton" />
+
+            <Button
+                android:id="@+id/button6"
+                android:text="6"
+                style="@style/CalculatorButton"/>
+
+            <Button
+                android:id="@+id/buttonMinus"
+                android:text="-"
+                style="@style/CalculatorButton" />
+        </TableRow>
+
 
         <TableRow
             android:layout_marginLeft="20dp">
@@ -51,52 +104,6 @@
 
         <TableRow
             android:layout_marginLeft="20dp">
-            <Button
-                android:id="@+id/button4"
-                android:text="4"
-                style="@style/CalculatorButton"/>
-
-            <Button
-                android:id="@+id/button5"
-                android:text="5"
-                style="@style/CalculatorButton" />
-
-            <Button
-                android:id="@+id/button6"
-                android:text="6"
-                style="@style/CalculatorButton"/>
-
-            <Button
-                android:id="@+id/buttonMinus"
-                android:text="-"
-                style="@style/CalculatorButton" />
-        </TableRow>
-
-        <TableRow
-            android:layout_marginLeft="20dp">
-            <Button
-                android:id="@+id/button7"
-                android:text="7"
-                style="@style/CalculatorButton"/>
-
-            <Button
-                android:id="@+id/button8"
-                android:text="8"
-                style="@style/CalculatorButton"/>
-
-            <Button
-                android:id="@+id/button9"
-                android:text="9"
-                style="@style/CalculatorButton" />
-
-            <Button
-                android:id="@+id/buttonMultiply"
-                android:text="*"
-                style="@style/CalculatorButton" />
-        </TableRow>
-
-        <TableRow
-            android:layout_marginLeft="20dp">
 
             <Button
                 android:id="@+id/button0"
@@ -104,13 +111,9 @@
                 style="@style/CalculatorButton"/>
 
             <Button
-                android:id="@+id/buttonClr"
-                android:layout_width="73dp"
-                android:layout_height="70dp"
-                android:layout_margin="5dp"
-                android:background="@color/black"
-                android:text="Clr"
-                android:textSize="18dp"/>
+                android:id="@+id/buttonDot"
+                android:text="."
+                style="@style/CalculatorButton"/>
 
             <Button
                 android:id="@+id/buttonEqual"

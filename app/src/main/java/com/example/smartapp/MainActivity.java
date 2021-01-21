@@ -27,12 +27,12 @@ public class MainActivity extends AppCompatActivity implements TabLayout.OnTabSe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_screen);
 
-        TabLayout tabs = (TabLayout) findViewById(R.id.tab);
+        TabLayout tabs = findViewById(R.id.tab);
             tabs.addTab(tabs.newTab().setText("CALCULATOR").setIcon(R.drawable.calculator_icon));
             tabs.addTab(tabs.newTab().setText("CONVERTER").setIcon(R.drawable.converter_icon));
             tabs.setTabGravity(TabLayout.GRAVITY_FILL);
 
-        ViewPager viewPager = (ViewPager) findViewById(R.id.viewp);
+        ViewPager viewPager = findViewById(R.id.viewp);
         TabsAdapter tabsAdapter = new TabsAdapter(getSupportFragmentManager(), tabs.getTabCount());
         viewPager.setAdapter(tabsAdapter);
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabs));
